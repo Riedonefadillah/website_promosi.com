@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial,sans-serif;
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+}
+header{
+    text-align: center;
+    margin-bottom: 30px;
+}
+header h1{
+    font-size: 2.5em;
+    color: orange;
+}
+header p{
+    color: #ccc;
+}
+#produk-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.produk{
+    background-color: #1e1e1e;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 15px;
+    box-shadow:0 0 15px rgba(225,165,0,0.3);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+}
+.produk.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+.produk img{
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.produk h2{
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #f7b733;
+}
+.harga{
+    margin-bottom: 8px;
+}
+.harga s{
+    color: #888;
+}
+.harga strong{
+    color: orange;
+    font-size: 1.1em;
+}
+.deskripsi{
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+.beli{
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+
+}
+.beli:hover{
+    background-color: #1ebe5d;
+}
